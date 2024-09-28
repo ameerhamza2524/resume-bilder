@@ -1,0 +1,121 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-weight: 700;
+}
+
+.form-section {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #444;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 20px auto;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.add-skill, .add-education {
+    margin-top: 10px;
+    background-color: #28a745;
+    transition: background-color 0.3s ease;
+}
+
+.add-skill:hover, .add-education:hover {
+    background-color: #218838;
+}
+
+.resume-preview {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f0f2f5;
+    border-radius: 10px;
+    display: none;
+}
+
+.resume-preview h3 {
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center; /* Center the resume name */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+.preview-section {
+    margin-bottom: 20px;
+}
+
+.resume-name {
+    text-align: center; /* Center the name */
+    font-size: 28px; /* Increase font size for better visibility */
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #007bff; /* Add a line under the name */
+}
+
+.download-btn {
+    background-color: #ff5722; /* Change download button color */
+    color: #fff;
+}
+
+.download-btn:hover {
+    background-color: #e64a19; /* Darker shade on hover */
+}

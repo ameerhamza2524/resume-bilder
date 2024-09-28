@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Resume Builder</h1>
+
+    <!-- Personal Details Section -->
+    <div class="form-section">
+        <h2>Personal Information</h2>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" placeholder="Enter your phone number">
+
+        <label for="about">About You:</label>
+        <textarea id="about" rows="3" placeholder="Tell us about yourself"></textarea>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="form-section">
+        <h2>Skills</h2>
+        <div id="skills-container">
+            <input type="text" class="skill-input" placeholder="Enter your skill">
+        </div>
+        <button class="add-skill" onclick="addSkill()">Add More Skill</button>
+    </div>
+
+    <!-- Experience Section -->
+    <div class="form-section">
+        <h2>Experience</h2>
+        <textarea id="experience" rows="5" placeholder="Describe your experience"></textarea>
+    </div>
+
+    <!-- Education Section -->
+    <div class="form-section">
+        <h2>Education</h2>
+        <div id="education-container">
+            <div class="education-entry">
+                <input type="text" class="education-institute" placeholder="Institution Name">
+                <input type="text" class="education-degree" placeholder="Degree">
+                <input type="text" class="education-year" placeholder="Year (e.g., 2020-2024)">
+            </div>
+        </div>
+        <button class="add-education" onclick="addEducation()">Add More Education</button>
+    </div>
+
+    <button onclick="generateResume()">Generate Resume</button>
+
+    <!-- Resume Preview Section -->
+    <div class="resume-preview" id="resumePreview">
+        <h2>Resume Preview</h2>
+
+        <div class="preview-section" id="resumeContent">
+            <h3 id="previewName" class="resume-name"></h3>
+            <p><strong>Email:</strong> <span id="previewEmail"></span></p>
+            <p><strong>Phone:</strong> <span id="previewPhone"></span></p>
+            <p><strong>About:</strong> <span id="previewAbout"></span></p>
+        </div>
+
+        <div class="preview-section">
+            <h3>Skills</h3>
+            <ul id="previewSkills"></ul>
+        </div>
+
+        <div class="preview-section">
+            <h3>Experience</h3>
+            <p id="previewExperience"></p>
+        </div>
+
+        <div class="preview-section">
+            <h3>Education</h3>
+            <ul id="previewEducation"></ul>
+        </div>
+
+        <button class="download-btn" onclick="downloadPDF()">Download as PDF</button>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
